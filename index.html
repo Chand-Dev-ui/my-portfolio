@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chand Developer — Cybersecurity &amp; Web Development</title>
+  <meta name="description" content="Portfolio of Chand Developer, based in Karachi, Pakistan, focused on cybersecurity and web development." />
+  <meta name="theme-color" content="#050505" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='10' fill='%2339FF14'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <!-- CHANGE: your logo text -->
+      <a class="logo" href="#top">CHAND DEVELOPER<span>.</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <!-- The 3D orb is drawn into this element by src/orb.js -->
+      <div class="hero-canvas" id="orb-mount" aria-hidden="true"></div>
+      <!-- Shown only if the browser has no WebGL -->
+      <div class="orb-fallback" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <p class="hero-label">CYBERSECURITY &amp; WEB DEVELOPMENT</p>
+        <h1 class="hero-title">
+          <span class="line"><span>I BUILD</span></span>
+          <span class="line"><span>DIGITAL</span></span>
+          <span class="line"><span>EXPERIENCES.</span></span>
+        </h1>
+        <p class="hero-text">Designing and developing immersive digital experiences through code, creativity, and interaction.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">EXPLORE MY WORK</a>
+          <a class="btn btn-ghost" href="#contact">LET'S TALK</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to about section"><span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="reveal">
+          <h2 class="h2">Hello, I'm Chand Developer.</h2>
+          <p class="lead">I'm based in Karachi, Pakistan, and I'm focused on cybersecurity and web development. I enjoy learning how websites work, building interfaces, and exploring how to make digital experiences more useful and secure.</p>
+          <p class="muted">This portfolio is a work in progress. The projects below are concept demonstrations, not claims of completed client work.</p>
+        </div>
+        <div class="about-side reveal">
+          <ul class="stats">
+            <li><strong>01</strong><span>Cybersecurity</span></li>
+            <li><strong>02</strong><span>Web Development</span></li>
+            <li><strong>03</strong><span>Creative UI</span></li>
+          </ul>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Karachi, Pakistan</dd></div>
+            <div><dt>Focus</dt><dd>Cybersecurity &amp; Web Development</dd></div>
+            <div><dt>Portfolio</dt><dd class="status">Personal learning project</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECHNOLOGIES ============ -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="h2 reveal">What I Work With</h2>
+        <p class="lead reveal">Technologies and tools I use or am exploring for web development and cybersecurity.</p>
+        <ul class="tech-list reveal" aria-label="Technologies">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li>
+          <li>Node.js</li><li>Three.js</li><li>Python</li><li>Git</li><li>GitHub</li>
+          <li>Responsive Design</li><li>Web Security</li><li>UI Development</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2 class="h2 reveal">My Projects</h2>
+        <p class="lead reveal">A showcase of projects I build. Open a project to view its source code or live demo.</p>
+        <div class="cards" id="project-list" aria-live="polite">
+          <article class="card reveal" data-tilt>
+            <div class="card-visual v1" aria-hidden="true"></div>
+            <div class="card-body">
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <h3>Neon Developer Portfolio</h3>
+              <p>My personal portfolio featuring a neon-green theme, animated interface, and interactive 3D energy orb.</p>
+              <div class="card-links"><a href="https://github.com/chand-dev-ui" target="_blank" rel="noopener noreferrer">Source / GitHub ↗</a></div>
+            </div>
+          </article>
+          <p class="muted" id="projects-loading">Loading saved projects…</p>
+        </div>
+        <div class="project-upload reveal" id="project-admin-box">
+          <h3>Manage projects</h3>
+          <p>Only the site owner can add projects. Sign in to upload a project name, GitHub link, and image. Visitors can only view published projects.</p>
+          <div class="admin-actions">
+            <button class="btn btn-primary" id="admin-login-open" type="button">ADMIN LOGIN</button>
+            <button class="btn btn-primary" id="add-project-open" type="button" hidden>+ ADD PROJECT</button>
+            <button class="btn" id="admin-logout" type="button" hidden>LOG OUT</button>
+          </div>
+          <p id="admin-status" class="muted" role="status">Connect Supabase using the setup guide to enable project uploads.</p>
+        </div>
+
+        <dialog id="admin-login-dialog" class="project-dialog">
+          <form id="admin-login-form" class="dialog-form">
+            <button class="dialog-close" type="button" data-close="admin-login-dialog" aria-label="Close">×</button>
+            <h3>Admin Login</h3>
+            <label for="admin-email">Email</label><input id="admin-email" type="email" autocomplete="username" required />
+            <label for="admin-password">Password</label><input id="admin-password" type="password" autocomplete="current-password" required />
+            <button class="btn btn-primary" type="submit">SIGN IN</button>
+            <p id="login-error" class="muted" role="status"></p>
+          </form>
+        </dialog>
+        <dialog id="add-project-dialog" class="project-dialog">
+          <form id="add-project-form" class="dialog-form">
+            <button class="dialog-close" type="button" data-close="add-project-dialog" aria-label="Close">×</button>
+            <h3>+ Add Project</h3>
+            <label for="project-name">Project name</label><input id="project-name" maxlength="80" placeholder="My amazing website" required />
+            <label for="project-github">GitHub link</label><input id="project-github" type="url" placeholder="https://github.com/username/project" required />
+            <label for="project-image">Project image</label><input id="project-image" type="file" accept="image/png,image/jpeg,image/webp" required />
+            <p class="muted">PNG, JPG, or WebP; maximum 3 MB.</p>
+            <button class="btn btn-primary" type="submit">SAVE PROJECT</button>
+            <p id="project-error" class="muted" role="status"></p>
+          </form>
+        </dialog>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section" id="approach">
+      <div class="wrap">
+        <h2 class="h2 reveal">How I work</h2>
+        <ol class="steps reveal">
+          <li style="--i:0"><span class="step-n">01</span><h3>Listen</h3><p>We define the goal, the audience and what success looks like before anything is drawn.</p></li>
+          <li style="--i:1"><span class="step-n">02</span><h3>Design</h3><p>Quick sketches and clickable prototypes so we can test ideas while they are cheap to change.</p></li>
+          <li style="--i:2"><span class="step-n">03</span><h3>Build</h3><p>Clean, accessible code with motion and 3D added only where it helps people understand.</p></li>
+          <li style="--i:3"><span class="step-n">04</span><h3>Refine</h3><p>Performance checks, device testing and polish, then a handover you can maintain.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="reveal">
+          <h2 class="h2">Let's build something.</h2>
+          <p class="lead">I'm currently building my skills in cybersecurity and web development. You can find my profile and future projects on GitHub.</p>
+          <a class="mail-link" href="https://github.com/chand-dev-ui" target="_blank" rel="noopener noreferrer">github.com/chand-dev-ui ↗</a>
+          <ul class="socials">
+            <li><a href="https://github.com/chand-dev-ui" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="form reveal">
+          <h3>Let's connect</h3>
+          <p class="muted">Email contact has not been added yet. Visit my GitHub profile to see my work and get in touch through available profile options.</p>
+          <a class="btn btn-primary" href="https://github.com/chand-dev-ui" target="_blank" rel="noopener noreferrer">VISIT GITHUB</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Chand Developer. Built with curiosity.</p>
+      <ul class="socials">
+        <li><a href="https://github.com/chand-dev-ui" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+      <a class="to-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+<style>
+/* ==========================================================================
+   NEON PORTFOLIO STYLES
+   Change colours and fonts in the :root block below.
+   ========================================================================== */
+:root {
+  --bg: #050505;
+  --accent: #39FF14;               /* neon green */
+  --accent-soft: rgba(57, 255, 20, 0.12);
+  --text: #f3f6f3;
+  --muted: #8c938c;
+  --line: rgba(255, 255, 255, 0.1);
+  --surface: rgba(255, 255, 255, 0.03);
+  --font-display: 'Unbounded', 'Arial Black', system-ui, sans-serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --pad: clamp(1.25rem, 5vw, 4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 400 1rem/1.7 var(--font-body); overflow-x: hidden;
+}
+body.menu-open { overflow: hidden; }
+/* subtle film grain over the whole page */
+body::after {
+  content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 60; opacity: 0.05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+h1, h2, h3, p, dl, dd { margin: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+::selection { background: var(--accent); color: #031000; }
+
+.skip-link { position: fixed; left: 1rem; top: -4rem; z-index: 100; background: var(--accent); color: #031000; padding: .6rem 1rem; border-radius: 6px; font-weight: 700; transition: top .2s; }
+.skip-link:focus { top: 1rem; }
+
+.cursor-glow {
+  position: fixed; left: 0; top: 0; width: 460px; height: 460px; margin: -230px 0 0 -230px;
+  background: radial-gradient(circle, rgba(57,255,20,.1), transparent 62%);
+  pointer-events: none; z-index: 0; opacity: 0; transition: opacity .6s; mix-blend-mode: screen;
+}
+.cursor-glow.on { opacity: 1; }
+
+.wrap { width: min(1180px, 100% - 2 * var(--pad)); margin-inline: auto; }
+.section { position: relative; z-index: 1; padding-block: clamp(5rem, 11vw, 9rem); scroll-margin-top: 4rem; }
+.h2 { font: 600 clamp(1.6rem, 4vw, 2.9rem)/1.15 var(--font-display); letter-spacing: -0.02em; margin-bottom: clamp(2rem, 4vw, 3.5rem); max-width: 18ch; }
+.lead { font-size: clamp(1.05rem, 1.6vw, 1.3rem); line-height: 1.65; max-width: 56ch; margin-bottom: 1.2rem; }
+.muted { color: var(--muted); max-width: 56ch; }
+
+/* ---------- Header / nav ---------- */
+.site-header { position: fixed; inset: 0 0 auto 0; z-index: 70; transition: background .3s, border-color .3s; border-bottom: 1px solid transparent; }
+.site-header.scrolled { background: rgba(5, 5, 5, 0.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: var(--line); }
+.nav { width: min(1280px, 100% - 2 * var(--pad)); margin-inline: auto; height: 4.5rem; display: flex; align-items: center; justify-content: space-between; }
+.logo { font: 600 1rem var(--font-display); letter-spacing: .02em; position: relative; z-index: 2; }
+.logo span { color: var(--accent); }
+.nav-menu { display: flex; gap: 2.4rem; }
+.nav-menu a { position: relative; font-size: .95rem; font-weight: 500; color: var(--muted); padding-block: .4rem; transition: color .25s; }
+.nav-menu a::after { content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%; background: var(--accent); box-shadow: 0 0 10px var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .3s; }
+.nav-menu a:hover, .nav-menu a.active { color: var(--text); }
+.nav-menu a:hover::after, .nav-menu a.active::after { transform: scaleX(1); }
+.nav-toggle { display: none; width: 44px; height: 44px; background: none; border: 0; cursor: pointer; position: relative; z-index: 2; }
+.nav-toggle span { position: absolute; left: 11px; right: 11px; height: 2px; background: var(--text); transition: transform .3s, top .3s; }
+.nav-toggle span:first-child { top: 17px; }
+.nav-toggle span:last-child { top: 25px; }
+.open .nav-toggle span:first-child { top: 21px; transform: rotate(45deg); }
+.open .nav-toggle span:last-child { top: 21px; transform: rotate(-45deg); }
+
+/* ---------- Buttons ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; font: 600 .78rem var(--font-display); letter-spacing: .06em; padding: 1.05rem 1.7rem; border-radius: 999px; border: 1px solid var(--accent); cursor: pointer; transition: transform .25s, box-shadow .25s, background .25s, color .25s; }
+.btn-primary { background: var(--accent); color: #031000; box-shadow: 0 0 0 rgba(57,255,20,0); }
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 34px rgba(57,255,20,.45); }
+.btn-ghost { background: transparent; color: var(--accent); }
+.btn-ghost:hover { background: var(--accent-soft); transform: translateY(-3px); box-shadow: 0 0 24px rgba(57,255,20,.2); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; min-height: 100svh; display: grid; align-items: end; padding: 6rem var(--pad) 5rem; overflow: hidden; isolation: isolate; }
+.hero-canvas { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.hero-canvas canvas { display: block; width: 100%; height: 100%; }
+.hero::after { content: ''; position: absolute; inset: auto 0 0 0; height: 30%; background: linear-gradient(transparent, var(--bg)); z-index: -1; pointer-events: none; }
+.hero-inner { width: min(1280px, 100%); margin-inline: auto; }
+.hero-label { font: 500 .78rem var(--font-display); letter-spacing: .28em; color: var(--accent); margin-bottom: 1.4rem; }
+.hero-title { font: 600 clamp(1.75rem, 5.2vw, 4.8rem)/1.05 var(--font-display); letter-spacing: -0.03em; margin-bottom: 1.6rem; }
+.hero-title .line { display: block; overflow: hidden; padding-bottom: .08em; }
+.hero-title .line > span { display: block; animation: rise 1s cubic-bezier(.2,.8,.2,1) both; }
+.hero-title .line:nth-child(2) > span { animation-delay: .12s; }
+.hero-title .line:nth-child(3) > span { animation-delay: .24s; }
+.hero-label, .hero-text, .hero-actions { animation: fade 1s .5s both; }
+.hero-text { color: #c4cac4; max-width: 34rem; font-size: clamp(1rem, 1.5vw, 1.2rem); margin-bottom: 2.2rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+.scroll-hint { position: absolute; right: var(--pad); bottom: 2rem; width: 26px; height: 44px; border: 1.5px solid var(--muted); border-radius: 14px; }
+.scroll-hint span { position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; background: var(--accent); border-radius: 2px; animation: wheel 1.8s infinite; }
+@keyframes rise { from { transform: translateY(105%); } to { transform: none; } }
+@keyframes fade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes wheel { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
+@keyframes float { 0%, 100% { transform: translateY(-50%); } 50% { transform: translateY(calc(-50% - 14px)); } }
+
+/* Fallback shown only when WebGL is unavailable */
+.orb-fallback { display: none; position: absolute; z-index: -1; right: 10%; top: 45%; width: min(44vw, 520px); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #c8ffbb 0, #39ff14 16%, #0b4a06 52%, #020a01 74%);
+  box-shadow: 0 0 140px 30px rgba(57,255,20,.35); animation: float 7s ease-in-out infinite; }
+.no-webgl .orb-fallback { display: block; }
+
+/* ---------- About ---------- */
+.about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2.2rem; }
+.stats strong { display: block; font: 600 clamp(1.6rem, 3vw, 2.4rem) var(--font-display); color: var(--accent); text-shadow: 0 0 24px rgba(57,255,20,.4); }
+.stats span { font-size: .85rem; color: var(--muted); line-height: 1.3; display: block; margin-top: .3rem; }
+.facts > div { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-top: 1px solid var(--line); }
+.facts > div:last-child { border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--muted); }
+.facts dd { text-align: right; }
+.status::before { content: ''; display: inline-block; width: 8px; height: 8px; margin-right: .6rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); animation: pulse 2s infinite; }
+@keyframes pulse { 50% { opacity: .35; } }
+
+/* ---------- Skills ---------- */
+.skills { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem clamp(2rem, 6vw, 6rem); }
+.skill-top { display: flex; justify-content: space-between; margin-bottom: .7rem; font-weight: 500; }
+.skill-top span:last-child { color: var(--muted); font-size: .9rem; }
+.bar { height: 3px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--accent); box-shadow: 0 0 12px var(--accent); border-radius: 3px; transition: width 1.4s cubic-bezier(.2,.8,.2,1) .2s; }
+.is-visible .bar i { width: var(--level); }
+
+
+/* ---------- Technology chips ---------- */
+.tech-list { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+.tech-list li { padding: .8rem 1.15rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); transition: border-color .25s, color .25s, transform .25s, box-shadow .25s; }
+.tech-list li:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(57,255,20,.09); }
+.project-upload { margin-top: 2rem; padding: clamp(1.4rem, 3vw, 2.2rem); border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.project-upload h3 { font: 600 1.15rem var(--font-display); margin-bottom: .8rem; }
+.project-upload p { color: var(--muted); max-width: 75ch; margin-bottom: 1.2rem; }
+
+/* ---------- Projects ---------- */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.card { position: relative; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); overflow: hidden; transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .2s ease-out, border-color .3s, box-shadow .3s, opacity .9s; will-change: transform; }
+.card::after { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .3s; background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(57,255,20,.14), transparent 60%); }
+.card:hover { border-color: rgba(57,255,20,.5); box-shadow: 0 20px 60px rgba(57,255,20,.1); }
+.card:hover::after { opacity: 1; }
+.card-visual { aspect-ratio: 16 / 10; border-bottom: 1px solid var(--line); transition: transform .6s; }
+.card:hover .card-visual { transform: scale(1.05); }
+.card-visual.v1 { background: radial-gradient(circle at 50% 55%, #39ff14 0, #0c5a07 14%, transparent 15%), repeating-radial-gradient(circle at 50% 55%, transparent 0 22px, rgba(57,255,20,.35) 23px 24px), #070a07; }
+.card-visual.v2 { background: linear-gradient(to top, rgba(57,255,20,.4), transparent 60%) 15% 100% / 10% 70% no-repeat, linear-gradient(to top, rgba(57,255,20,.7), transparent 60%) 35% 100% / 10% 45% no-repeat, linear-gradient(to top, rgba(57,255,20,.5), transparent 60%) 55% 100% / 10% 85% no-repeat, linear-gradient(to top, rgba(57,255,20,.8), transparent 60%) 75% 100% / 10% 60% no-repeat, linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px) 0 0 / 100% 28px, #070a07; }
+.card-visual.v3 { background: conic-gradient(from 200deg at 50% 50%, #070a07, #39ff14 25%, #070a07 50%, #0c5a07 75%, #070a07); }
+.card-body { padding: 1.6rem; position: relative; z-index: 1; }
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1rem; }
+.tags li { font-size: .75rem; padding: .2rem .65rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); }
+.card h3 { font: 600 1.15rem var(--font-display); margin-bottom: .7rem; }
+.card p { color: var(--muted); font-size: .95rem; margin-bottom: 1.3rem; }
+.card-links { display: flex; gap: 1.4rem; font-weight: 700; font-size: .9rem; }
+.card-links a { color: var(--accent); border-bottom: 1px solid transparent; transition: border-color .2s; }
+.card-links a:hover { border-color: var(--accent); }
+
+/* ---------- Approach (a real sequence, so numbered) ---------- */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.steps li { position: relative; padding-top: 1.6rem; }
+.steps li::before, .steps li::after { content: ''; position: absolute; top: 0; left: 0; height: 2px; width: 100%; }
+.steps li::before { background: var(--line); }
+.steps li::after { background: var(--accent); box-shadow: 0 0 12px var(--accent); transform: scaleX(0); transform-origin: left; transition: transform .9s cubic-bezier(.2,.8,.2,1); transition-delay: calc(var(--i) * .25s + .2s); }
+.is-visible .steps li::after, .steps.is-visible li::after { transform: scaleX(1); }
+.step-n { font: 500 .85rem var(--font-display); color: var(--accent); }
+.steps h3 { font: 600 1.25rem var(--font-display); margin: .8rem 0 .6rem; }
+.steps p { color: var(--muted); font-size: .95rem; }
+
+/* ---------- Contact ---------- */
+.contact { background: radial-gradient(ellipse at 80% 100%, rgba(57,255,20,.09), transparent 55%); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+.mail-link { display: inline-block; font: 600 clamp(1.1rem, 2.2vw, 1.6rem) var(--font-display); color: var(--accent); margin: .6rem 0 2rem; border-bottom: 2px solid transparent; transition: border-color .25s, text-shadow .25s; overflow-wrap: anywhere; }
+.mail-link:hover { border-color: var(--accent); text-shadow: 0 0 22px rgba(57,255,20,.5); }
+.socials { display: flex; gap: 1.6rem; flex-wrap: wrap; }
+.socials a { color: var(--muted); transition: color .2s; }
+.socials a:hover { color: var(--accent); }
+.form { display: grid; gap: 1.2rem; }
+.form label { display: grid; gap: .45rem; font-size: .9rem; color: var(--muted); }
+.form input, .form textarea { font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: .9rem 1rem; transition: border-color .25s, box-shadow .25s; resize: vertical; }
+.form input:focus, .form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.form .btn { justify-self: start; }
+.form-note { font-size: .9rem; color: var(--accent); min-height: 1.4em; }
+
+/* ---------- Footer ---------- */
+.footer { position: relative; z-index: 1; border-top: 1px solid var(--line); padding-block: 2rem; color: var(--muted); font-size: .9rem; }
+.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; flex-wrap: wrap; }
+.to-top { color: var(--accent); font-weight: 700; transition: transform .2s; }
+.to-top:hover { transform: translateY(-3px); }
+
+/* ---------- Reveal on scroll (kept subtle) ---------- */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s cubic-bezier(.2,.8,.2,1), transform .9s cubic-bezier(.2,.8,.2,1); }
+.reveal.is-visible { opacity: 1; transform: none; }
+.card.reveal { transform: perspective(900px) translateY(24px); }
+.card.reveal.is-visible { transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .2s ease-out, border-color .3s, box-shadow .3s, opacity .9s; }
+.cards .card:nth-child(2) { transition-delay: .1s; }
+.cards .card:nth-child(3) { transition-delay: .2s; }
+
+/* ---------- Tablet ---------- */
+@media (max-width: 1000px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+  .steps { grid-template-columns: 1fr 1fr; }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 820px) {
+  .nav-toggle { display: block; }
+  .nav-menu { position: fixed; inset: 0; background: rgba(5,5,5,.97); flex-direction: column; justify-content: center; align-items: center; gap: 1.6rem; opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s; }
+  .nav-menu a { font: 600 1.6rem var(--font-display); color: var(--text); }
+  .open .nav-menu { opacity: 1; visibility: visible; }
+  .about-grid, .contact-grid, .skills, .cards, .steps { grid-template-columns: 1fr; }
+  .hero { padding-bottom: 4rem; }
+  .scroll-hint { display: none; }
+  .orb-fallback { right: 50%; transform: translate(50%, -50%); top: 30%; width: 70vw; animation: none; }
+}
+@media (max-width: 420px) { .stats { grid-template-columns: 1fr; } .btn { width: 100%; } }
+
+/* ---------- Respect "reduce motion" ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; transition-delay: 0s !important; }
+  .reveal { opacity: 1; transform: none; }
+  .bar i { width: var(--level); }
+  .steps li::after { transform: scaleX(1); }
+  .cursor-glow { display: none; }
+}
+
+
+/* ---------- Private project admin ---------- */
+.admin-actions { display:flex; flex-wrap:wrap; gap:.8rem; }
+[hidden] { display:none !important; }
+.project-dialog { width:min(92vw, 480px); max-height:90vh; overflow:auto; color:var(--text); background:#080b08; border:1px solid rgba(57,255,20,.45); border-radius:18px; padding:0; box-shadow:0 24px 90px #000b; }
+.project-dialog::backdrop { background:rgba(0,0,0,.78); backdrop-filter:blur(5px); }
+.dialog-form { display:grid; gap:.7rem; padding:2rem; position:relative; }
+.dialog-form h3 { font:600 1.25rem var(--font-display); margin:0 2rem 1rem 0; }
+.dialog-form label { color:var(--muted); font-size:.9rem; }
+.dialog-form input { width:100%; min-width:0; color:var(--text); background:#101410; border:1px solid var(--line); border-radius:9px; padding:.85rem; }
+.dialog-form input:focus { outline:1px solid var(--accent); border-color:var(--accent); }
+.dialog-close { position:absolute; top:1rem; right:1rem; border:1px solid var(--line); border-radius:50%; background:#101410; color:var(--text); width:2rem; height:2rem; font-size:1.3rem; cursor:pointer; }
+.project-photo { width:100%; aspect-ratio:16/10; object-fit:cover; display:block; border-bottom:1px solid var(--line); }
+.project-error { color:#ff8c8c; }
+@media(max-width:900px) { .cards { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .cards { grid-template-columns:1fr; } .dialog-form { padding:1.4rem; } }
+</style>
+<script type="module">
+// Page interactions: menu, reveal-on-scroll, counters, card tilt, cursor glow, contact form.
+function initUI() {
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+  // ---- Footer year ----
+  $('#year').textContent = new Date().getFullYear();
+
+  // ---- Mobile menu ----
+  const header = $('.site-header');
+  const toggle = $('.nav-toggle');
+  function setMenu(open) {
+    header.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  toggle.addEventListener('click', () => setMenu(!header.classList.contains('open')));
+  $$('.nav-menu a').forEach((a) => a.addEventListener('click', () => setMenu(false)));
+  window.addEventListener('keydown', (e) => { if (e.key === 'Escape') { setMenu(false); toggle.focus(); } });
+
+  // ---- Header background after scrolling a little ----
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => { header.classList.toggle('scrolled', scrollY > 30); ticking = false; });
+  }, { passive: true });
+
+  // ---- Highlight the nav link of the section you are reading ----
+  const links = $$('.nav-menu a');
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      links.forEach((l) => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  $$('main section[id]').forEach((s) => spy.observe(s));
+
+  // ---- Counters (About stats) ----
+  function countUp(el) {
+    const end = Number(el.dataset.count);
+    if (reduced) { el.textContent = end + '+'; return; }
+    const t0 = performance.now();
+    (function step(now) {
+      const p = Math.min((now - t0) / 1400, 1);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))) + (p === 1 ? '+' : '');
+      if (p < 1) requestAnimationFrame(step);
+    })(t0);
+  }
+
+  // ---- Reveal on scroll ----
+  const revealer = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      en.target.classList.add('is-visible');
+      $$('[data-count]', en.target).forEach(countUp);
+      revealer.unobserve(en.target);
+    });
+  }, { threshold: 0.15 });
+  $$('.reveal').forEach((el) => revealer.observe(el));
+
+  // ---- 3D tilt on cards (mouse only) ----
+  if (!reduced && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    $$('[data-tilt]').forEach((card) => {
+      card.addEventListener('pointermove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width;
+        const y = (e.clientY - r.top) / r.height;
+        card.style.setProperty('--ry', ((x - 0.5) * 10).toFixed(2) + 'deg');
+        card.style.setProperty('--rx', ((0.5 - y) * 10).toFixed(2) + 'deg');
+        card.style.setProperty('--mx', x * 100 + '%');
+        card.style.setProperty('--my', y * 100 + '%');
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ry', '0deg');
+      });
+    });
+
+    // ---- Soft green light following the cursor ----
+    const glow = $('.cursor-glow');
+    let gx = 0, gy = 0, tx = 0, ty = 0, raf = 0;
+    const move = () => {
+      gx += (tx - gx) * 0.12; gy += (ty - gy) * 0.12;
+      glow.style.transform = `translate(${gx}px, ${gy}px)`;
+      raf = Math.abs(tx - gx) + Math.abs(ty - gy) > 0.5 ? requestAnimationFrame(move) : 0; // stops when idle
+    };
+    window.addEventListener('pointermove', (e) => {
+      tx = e.clientX; ty = e.clientY;
+      glow.classList.add('on');
+      if (!raf) raf = requestAnimationFrame(move);
+    }, { passive: true });
+  }
+
+  // ---- Contact form: opens the visitor's email app with the message filled in ----
+}
+
+// ---------------------------------------------------------------------------
+// The 3D energy orb. Everything is generated with code (no model files).
+//
+// Layers:  1. glow      - soft light behind the orb
+//          2. core      - sphere with a noise shader (energy veins + rim light)
+//          3. ring      - thin tilted ring for depth
+//          4. particles - drifting sparks orbiting the core
+// ---------------------------------------------------------------------------
+import * as THREE from 'https://esm.sh/three@0.170.0';
+
+// >>> CHANGE THE ORB COLOUR HERE <<<
+const ORB_COLOR = 0x39ff14;
+
+// Small helper: is WebGL available in this browser?
+function hasWebGL() {
+  try {
+    const c = document.createElement('canvas');
+    return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl')));
+  } catch {
+    return false;
+  }
+}
+
+// GLSL noise used to make the surface look like swirling energy.
+const NOISE = /* glsl */ `
+  float hash(vec3 p){ p = fract(p*0.3183099+0.1); p *= 17.0; return fract(p.x*p.y*p.z*(p.x+p.y+p.z)); }
+  float noise(vec3 x){
+    vec3 i = floor(x); vec3 f = fract(x); f = f*f*(3.0-2.0*f);
+    return mix(mix(mix(hash(i),hash(i+vec3(1,0,0)),f.x), mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),
+               mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x), mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y), f.z);
+  }
+  float fbm(vec3 p){ float v=0.0; float a=0.5; for(int i=0;i<4;i++){ v+=a*noise(p); p*=2.02; a*=0.5; } return v; }
+`;
+
+const coreVertex = /* glsl */ `
+  ${NOISE}
+  uniform float uTime; uniform float uStrength;
+  varying vec3 vNormal; varying vec3 vView; varying float vNoise;
+  void main(){
+    float n = fbm(position*1.7 + uTime*0.25);
+    vNoise = n;
+    vec3 p = position + normal*(n-0.5)*0.32*uStrength;   // bumpy, breathing surface
+    vNormal = normalize(normalMatrix*normal);
+    vec4 mv = modelViewMatrix*vec4(p,1.0);
+    vView = -mv.xyz;
+    gl_Position = projectionMatrix*mv;
+  }
+`;
+const coreFragment = /* glsl */ `
+  uniform float uTime; uniform vec3 uColor;
+  varying vec3 vNormal; varying vec3 vView; varying float vNoise;
+  void main(){
+    vec3 n = normalize(vNormal); vec3 v = normalize(vView);
+    float fres = pow(1.0 - max(dot(n,v),0.0), 2.2);                 // bright edges
+    float vein = pow(1.0 - abs(sin(vNoise*16.0 + uTime*0.7)), 8.0); // glowing energy lines
+    vec3 col = mix(uColor*0.05, uColor*0.55, vNoise*vNoise*1.6);
+    col += uColor*vein*0.9;
+    col += uColor*fres*1.4 + vec3(0.6,1.0,0.6)*pow(fres,5.0)*0.8;
+    gl_FragColor = vec4(col, 1.0);
+  }
+`;
+
+const glowVertex = /* glsl */ `
+  varying vec2 vUv;
+  void main(){ vUv = uv; gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0); }
+`;
+const glowFragment = /* glsl */ `
+  uniform vec3 uColor; uniform float uTime; varying vec2 vUv;
+  void main(){
+    float d = length(vUv-0.5)*2.0;
+    float g = exp(-d*d*6.0)*0.55 + exp(-d*3.0)*0.12;
+    g *= 0.92 + 0.08*sin(uTime*1.3);
+    gl_FragColor = vec4(uColor, g);
+  }
+`;
+
+const pointsVertex = /* glsl */ `
+  attribute float aSeed; attribute float aSize;
+  uniform float uTime; uniform float uPx; varying float vA;
+  void main(){
+    float ang = uTime*(0.08 + aSeed*0.18);          // each spark orbits at its own speed
+    float c = cos(ang), s = sin(ang);
+    vec3 p = vec3(position.x*c + position.z*s, position.y + sin(uTime*0.5 + aSeed*20.0)*0.05, -position.x*s + position.z*c);
+    vec4 mv = modelViewMatrix*vec4(p,1.0);
+    gl_PointSize = aSize*uPx*(14.0/-mv.z);
+    vA = 0.45 + 0.55*sin(uTime*1.5 + aSeed*40.0)*0.5 + 0.25;
+    gl_Position = projectionMatrix*mv;
+  }
+`;
+const pointsFragment = /* glsl */ `
+  uniform vec3 uColor; varying float vA;
+  void main(){
+    float d = length(gl_PointCoord-0.5);
+    gl_FragColor = vec4(uColor, smoothstep(0.5,0.0,d)*vA);
+  }
+`;
+
+function createOrb(mount) {
+  if (!mount || !hasWebGL()) return null;
+
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = matchMedia('(max-width: 820px)').matches;
+
+  // ---- Renderer, scene, camera -------------------------------------------
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+  const pixelRatio = Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2); // cap for performance
+  renderer.setPixelRatio(pixelRatio);
+  renderer.setClearColor(0x000000, 0); // transparent: page background shows through
+  mount.appendChild(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 50);
+  camera.position.z = 6;
+
+  const color = new THREE.Color().setHex(ORB_COLOR, THREE.LinearSRGBColorSpace); // raw colour for shaders
+  const time = { value: 0 };
+
+  // root moves/floats, tilt rotates with the mouse
+  const root = new THREE.Group();
+  const tilt = new THREE.Group();
+  root.add(tilt);
+  scene.add(root);
+
+  // ---- 1. Glow (flat plane with a soft gradient shader) -------------------
+  const glowMat = new THREE.ShaderMaterial({
+    uniforms: { uColor: { value: color }, uTime: time },
+    vertexShader: glowVertex, fragmentShader: glowFragment,
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+  });
+  const glow = new THREE.Mesh(new THREE.PlaneGeometry(7.5, 7.5), glowMat);
+  glow.position.z = -0.6;
+  root.add(glow);
+
+  // ---- 2. Core -------------------------------------------------------------
+  const coreMat = new THREE.ShaderMaterial({
+    uniforms: { uTime: time, uColor: { value: color }, uStrength: { value: 1 } },
+    vertexShader: coreVertex, fragmentShader: coreFragment,
+  });
+  const segments = isMobile ? 64 : 112;
+  const core = new THREE.Mesh(new THREE.SphereGeometry(1, segments, segments), coreMat);
+  tilt.add(core);
+
+  // ---- 3. Ring -------------------------------------------------------------
+  const ringMat = new THREE.MeshBasicMaterial({ color: ORB_COLOR, transparent: true, opacity: 0.28 });
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(1.75, 0.006, 8, 160), ringMat);
+  ring.rotation.set(1.25, 0.25, 0);
+  tilt.add(ring);
+
+  // ---- 4. Particles --------------------------------------------------------
+  const count = isMobile ? 700 : 1500;
+  const pos = new Float32Array(count * 3);
+  const seed = new Float32Array(count);
+  const size = new Float32Array(count);
+  for (let i = 0; i < count; i++) {
+    const r = 1.45 + Math.pow(Math.random(), 1.5) * 1.6;
+    const theta = Math.random() * Math.PI * 2;
+    const phi = Math.acos(2 * Math.random() - 1);
+    pos[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+    pos[i * 3 + 1] = r * Math.cos(phi);
+    pos[i * 3 + 2] = r * Math.sin(phi) * Math.sin(theta);
+    seed[i] = Math.random();
+    size[i] = 0.5 + Math.random() * 1.2;
+  }
+  const pGeo = new THREE.BufferGeometry();
+  pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  pGeo.setAttribute('aSeed', new THREE.BufferAttribute(seed, 1));
+  pGeo.setAttribute('aSize', new THREE.BufferAttribute(size, 1));
+  const pMat = new THREE.ShaderMaterial({
+    uniforms: { uTime: time, uColor: { value: color }, uPx: { value: pixelRatio } },
+    vertexShader: pointsVertex, fragmentShader: pointsFragment,
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+  });
+  const particles = new THREE.Points(pGeo, pMat);
+  tilt.add(particles);
+
+  // ---- Layout: orb sits on the right on wide screens, top-centre on phones -
+  let baseX = 0, baseY = 0;
+  function layout() {
+    const w = mount.clientWidth || 1;
+    const h = mount.clientHeight || 1;
+    renderer.setSize(w, h);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    const visibleW = 2 * Math.tan((camera.fov * Math.PI) / 360) * camera.position.z * camera.aspect;
+    if (camera.aspect > 1.05) { baseX = visibleW * 0.25; baseY = 0; root.scale.setScalar(1.1); }
+    else { baseX = 0; baseY = 0.9; root.scale.setScalar(Math.max(0.55, Math.min(0.9, visibleW / 2.6))); }
+    root.position.set(baseX, baseY, 0);
+    if (reduced) renderer.render(scene, camera); // static frame for reduced motion
+  }
+
+  // ---- Pointer tracking -----------------------------------------------------
+  const target = { x: 0, y: 0 };   // where the pointer is (-1..1)
+  const smooth = { x: 0, y: 0 };   // eased value actually used
+  let lastX = 0, lastY = 0, speed = 0;
+  function onPointer(e) {
+    target.x = (e.clientX / window.innerWidth) * 2 - 1;
+    target.y = (e.clientY / window.innerHeight) * 2 - 1;
+    speed = Math.min(speed + Math.hypot(e.clientX - lastX, e.clientY - lastY) / 600, 1.2);
+    lastX = e.clientX; lastY = e.clientY;
+  }
+
+  // ---- Animation loop (paused when off-screen or tab hidden) ---------------
+  const clock = new THREE.Clock();
+  let raf = 0, running = false, inView = true;
+  function frame() {
+    raf = requestAnimationFrame(frame);
+    const dt = Math.min(clock.getDelta(), 0.05);
+    time.value += dt;
+    smooth.x += (target.x - smooth.x) * 0.05;
+    smooth.y += (target.y - smooth.y) * 0.05;
+    speed *= 0.94;
+    coreMat.uniforms.uStrength.value = 1 + speed;           // surface ripples when you move fast
+    tilt.rotation.y += dt * 0.12;                            // slow constant spin
+    tilt.rotation.x = smooth.y * 0.35;
+    tilt.position.x = smooth.x * 0.15;
+    root.position.x = baseX + smooth.x * 0.3;
+    root.position.y = baseY - smooth.y * 0.2 + Math.sin(time.value * 0.8) * 0.08; // floating
+    ring.rotation.z += dt * 0.15;
+    renderer.render(scene, camera);
+  }
+  function start() {
+    if (reduced || running || !inView || document.hidden) return;
+    running = true; clock.getDelta(); raf = requestAnimationFrame(frame);
+  }
+  function stop() { running = false; cancelAnimationFrame(raf); }
+
+  const io = new IntersectionObserver(([entry]) => { inView = entry.isIntersecting; inView ? start() : stop(); });
+  io.observe(mount);
+  const ro = new ResizeObserver(layout);
+  ro.observe(mount);
+  const onVisibility = () => (document.hidden ? stop() : start());
+  const onLost = (e) => e.preventDefault();
+  if (!reduced) window.addEventListener('pointermove', onPointer, { passive: true });
+  document.addEventListener('visibilitychange', onVisibility);
+  renderer.domElement.addEventListener('webglcontextlost', onLost);
+
+  layout();
+  start();
+  if (reduced) renderer.render(scene, camera);
+
+  // Called when the page closes: stop everything and free GPU memory.
+  function dispose() {
+    stop(); io.disconnect(); ro.disconnect();
+    window.removeEventListener('pointermove', onPointer);
+    document.removeEventListener('visibilitychange', onVisibility);
+    renderer.domElement.removeEventListener('webglcontextlost', onLost);
+    [core, glow, ring, particles].forEach((m) => { m.geometry.dispose(); m.material.dispose(); });
+    renderer.dispose();
+    renderer.domElement.remove();
+  }
+  return { dispose };
+}
+
+
+initUI();
+let orb = null;
+try { orb = createOrb(document.getElementById("orb-mount")); } catch (err) { console.warn("3D orb could not start:", err); }
+if (!orb) document.documentElement.classList.add("no-webgl");
+window.addEventListener("pagehide", () => orb && orb.dispose());
+</script>
+
+<script type="module">
+  // Public Supabase URL + publishable/anon key go here. Never put a service_role key in this file.
+  const SUPABASE_URL = "https://vhqorhuopdhdnkcydzno.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_Cz0O6gUTNHcMDlBbEIExjg_KSk750UO";
+  const ready = !SUPABASE_URL.startsWith("YOUR_") && !SUPABASE_ANON_KEY.startsWith("YOUR_");
+  const $ = (id) => document.getElementById(id);
+  const loginDialog = $("admin-login-dialog"), addDialog = $("add-project-dialog");
+  const setStatus = (message) => { $("admin-status").textContent = message; };
+  let supabase = null, currentUser = null;
+
+  for (const button of document.querySelectorAll("[data-close]")) button.addEventListener("click", () => $(button.dataset.close).close());
+  $("admin-login-open").addEventListener("click", () => loginDialog.showModal());
+  $("add-project-open").addEventListener("click", () => addDialog.showModal());
+  loginDialog.addEventListener("click", (e) => { if (e.target === loginDialog) loginDialog.close(); });
+  addDialog.addEventListener("click", (e) => { if (e.target === addDialog) addDialog.close(); });
+
+  function safeGithubUrl(value) {
+    try { const u = new URL(value); return u.protocol === "https:" && (u.hostname === "github.com" || u.hostname === "www.github.com") ? u.href : null; }
+    catch { return null; }
+  }
+  function projectCard(project) {
+    const article = document.createElement("article"); article.className = "card reveal is-visible";
+    const img = document.createElement("img"); img.className = "project-photo"; img.src = project.image_url; img.alt = `${project.name} project preview`; img.loading = "lazy";
+    const body = document.createElement("div"); body.className = "card-body";
+    const tags = document.createElement("ul"); tags.className = "tags";
+    for (const tag of ["Project", "GitHub"]) { const li = document.createElement("li"); li.textContent = tag; tags.append(li); }
+    const title = document.createElement("h3"); title.textContent = project.name;
+    const desc = document.createElement("p"); desc.textContent = "Open the GitHub repository to view this project.";
+    const links = document.createElement("div"); links.className = "card-links";
+    const a = document.createElement("a"); a.href = safeGithubUrl(project.github_url) || "https://github.com/chand-dev-ui"; a.target = "_blank"; a.rel = "noopener noreferrer"; a.textContent = "View on GitHub ↗";
+    links.append(a); body.append(tags,title,desc,links); article.append(img,body); return article;
+  }
+  async function loadProjects() {
+    const list = $("project-list");
+    if (!supabase) { $("projects-loading").textContent = "Connect Supabase to display projects you add here."; return; }
+    const { data, error } = await supabase.from("projects").select("id,name,github_url,image_url,created_at").order("created_at", {ascending:false});
+    $("projects-loading")?.remove();
+    if (error) { setStatus("Project list could not load. Check Supabase setup and table policies."); console.error(error); return; }
+    list.querySelectorAll("[data-database-project]").forEach(el => el.remove());
+    for (const project of (data || [])) { const card = projectCard(project); card.dataset.databaseProject = "true"; list.append(card); }
+    if (!data?.length) { const empty = document.createElement("p"); empty.id="projects-empty"; empty.className="muted"; empty.textContent="No uploaded projects yet. Check back soon."; list.append(empty); }
+    else $("projects-empty")?.remove();
+  }
+  function showSignedIn(user) {
+    currentUser = user;
+    $("admin-login-open").hidden = !!user; $("add-project-open").hidden = !user; $("admin-logout").hidden = !user;
+    setStatus(user ? "Admin signed in. You can now add a project." : (ready ? "You are viewing the public portfolio." : "Add your Supabase URL and publishable/anon key using SETUP-URDU.txt."));
+  }
+  if (ready) {
+    try {
+      const { createClient } = await import("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm");
+      supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      const { data: { session } } = await supabase.auth.getSession(); showSignedIn(session?.user || null);
+      supabase.auth.onAuthStateChange((_event, session) => { showSignedIn(session?.user || null); });
+      await loadProjects();
+    } catch (e) { console.error(e); setStatus("Could not connect to Supabase. Check the project URL and key."); }
+  } else { showSignedIn(null); await loadProjects(); }
+
+  $("admin-login-form").addEventListener("submit", async (e) => {
+    e.preventDefault(); $("login-error").textContent = "";
+    if (!supabase) { $("login-error").textContent = "Supabase setup is not complete. Follow SETUP-URDU.txt."; return; }
+    const { error } = await supabase.auth.signInWithPassword({ email: $("admin-email").value.trim(), password: $("admin-password").value });
+    if (error) { $("login-error").textContent = "Login nahi hua. Email/password check karo."; return; }
+    loginDialog.close(); $("admin-login-form").reset();
+  });
+  $("admin-logout").addEventListener("click", async () => { if (supabase) await supabase.auth.signOut(); showSignedIn(null); });
+
+  $("add-project-form").addEventListener("submit", async (e) => {
+    e.preventDefault(); $("project-error").textContent = "";
+    if (!supabase || !currentUser) { $("project-error").textContent = "Pehle admin login karo."; return; }
+    const name = $("project-name").value.trim(), github = safeGithubUrl($("project-github").value.trim()), file = $("project-image").files[0];
+    if (!github) { $("project-error").textContent = "GitHub ka valid https://github.com/... link do."; return; }
+    if (!file || !["image/jpeg","image/png","image/webp"].includes(file.type) || file.size > 3*1024*1024) { $("project-error").textContent = "PNG/JPG/WebP image select karo (maximum 3 MB)."; return; }
+    const submit = $("add-project-form").querySelector('button[type="submit"]'); submit.disabled = true; submit.textContent = "SAVING…";
+    try {
+      const ext = file.type === "image/png" ? "png" : file.type === "image/webp" ? "webp" : "jpg";
+      const path = `${currentUser.id}/${crypto.randomUUID()}.${ext}`;
+      const { error: uploadError } = await supabase.storage.from("project-images").upload(path, file, { upsert:false, contentType:file.type });
+      if (uploadError) throw uploadError;
+      const { data: publicData } = supabase.storage.from("project-images").getPublicUrl(path);
+      const { error: insertError } = await supabase.from("projects").insert({ name, github_url:github, image_url:publicData.publicUrl, storage_path:path, owner_id:currentUser.id });
+      if (insertError) { await supabase.storage.from("project-images").remove([path]); throw insertError; }
+      addDialog.close(); $("add-project-form").reset(); await loadProjects(); setStatus("Project successfully publish ho gaya!");
+    } catch (err) { console.error(err); $("project-error").textContent = "Save nahi hua. Setup guide mein SQL policies aur bucket check karo."; }
+    finally { submit.disabled = false; submit.textContent = "SAVE PROJECT"; }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+CHAND DEVELOPER PORTFOLIO — SUPABASE SETUP (Roman Urdu)
+
+Is guide ko ek dafa follow karo. Website ka + ADD PROJECT button tabhi kaam karega jab Supabase connect hoga.
+
+1) Supabase.com par account banao aur New project create karo. Database password apne paas safe rakho.
+2) Project khulne ke baad Settings > API (ya Connect/API Keys) mein Project URL aur publishable/anon key copy karo. Service role/secret key KABHI website mein mat daalna.
+3) Supabase ke SQL Editor mein neeche wali file `supabase-setup.sql` ka poora code paste karke Run karo.
+4) Authentication > Users mein Add user se apna admin email aur strong password banao. Email confirmation agar on ho to verify karo. Public sign-ups band rakho (Authentication settings mein).
+5) SQL file mein `PASTE_ADMIN_USER_UUID_HERE` ko apne admin user ki ID se replace karke SQL dobara run karo. User ID Authentication > Users mein milti hai. Yeh step zaroori hai—warna sirf login hona kaafi nahi, project save policy admin ID check karti hai.
+   Agar pehle SQL run kiya hai to policies section dobara run karne se pehle existing policies drop karo, ya shuru se admin UUID fill karke SQL ek baar run karo.
+6) index.html mein `YOUR_SUPABASE_PROJECT_URL` aur `YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY` ko apni values se replace karo. Sirf publishable/anon key use karna; service_role key nahi.
+7) index.html aur SETUP-URDU.txt aur supabase-setup.sql ko apni GitHub Pages repository mein upload/replace karo.
+8) Website ko refresh karo. Admin Login par apne banaye email/password se login karo. + ADD PROJECT > name > GitHub link > image > Save Project.
+
+Important:
+- Public visitors projects dekh sakte hain; database/storage write policies sirf tumhari configured admin UUID ko allow karti hain.
+- GitHub link sirf github.com URL accept karta hai. Images max 3 MB hain.
+- Browser mein local file (file://) se module import/auth kabhi issue de sakta hai; GitHub Pages URL par test karo.
+- Admin UUID ya service role key public code mein mat daalna. UUID SQL policies mein hoti hai, client-side code mein nahi.

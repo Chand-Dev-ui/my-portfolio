@@ -1,0 +1,32 @@
+CHAND DEVELOPER — NEON PORTFOLIO
+
+Personal details:
+- Name: Chand Developer
+- Location: Karachi, Pakistan
+- Focus: Cybersecurity & Web Development
+- GitHub: https://github.com/chand-dev-ui
+- Email: not added
+
+This is a single-file portfolio: HTML, CSS, and JavaScript are inside index.html. The Three.js orb and Google Fonts need an internet connection.
+
+TECHNOLOGY SECTION
+Edit the list under “What I Work With” in index.html to add or remove technologies such as HTML, CSS, JavaScript, TypeScript, Node.js, Python, Three.js, Git, and GitHub.
+
+HOW TO ADD A PROJECT SO VISITORS CAN SEE IT
+GitHub Pages is a static hosting service. This means the public website cannot accept and permanently store uploads directly from a visitor-facing form without a backend. Use GitHub to publish your project files, then add a card to this portfolio:
+
+1. Open the GitHub repository where this portfolio is hosted.
+2. Upload your project folder/files using Add file > Upload files.
+3. If it is a website, make sure its entry file is named index.html. A subfolder such as projects/my-project/ can be published at the matching Pages URL, depending on the repository layout.
+4. In this portfolio's index.html, find the PROJECT CARD TEMPLATE comment in the My Projects section. Copy an <article class="card reveal" data-tilt>...</article> block.
+5. Change the project title, description, technology tags, and links. Add a GitHub repository link for source code and a live demo URL if the project is published.
+6. Upload/commit the updated index.html to the portfolio repository. GitHub Pages will redeploy it.
+
+Do not put secret keys, passwords, or private files in a public repository.
+
+PUBLISH ON GITHUB PAGES
+1. Upload index.html to the root of a public repository.
+2. Open Settings > Pages.
+3. Choose Deploy from a branch, branch main, folder /(root), then Save.
+
+The project cards are editable examples, not claims of completed client work.
